@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixology - Building Digital Product</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/blog.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/logo.png"
+            width="179"
+            height="26"
+            alt="Glowing"
+        /></a>
+
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo.png"
+                width="179"
+                height="26"
+                alt="Glowing"
+            /></a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html" class="navbar-link has-after">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html" class="navbar-link has-after">About</a>
+            </li>
+
+            <li>
+              <a href="service.html" class="navbar-link has-after">Services</a>
+            </li>
+
+            <li>
+              <a href="blog.html" class="navbar-link has-after">Blog</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="section hero" id="home" aria-label="hero">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 hero-title">
+                We provides top-of-the-line
+                <span class="has-before">makeup, skincare</span>
+              </h1>
+
+              <p class="hero-text">
+                All our powders and pressed powders (eyeshadow, blush,
+                foundations, etc) are all triple milled using the finest
+                ingredients and pressed with a special ribbon to ensure high
+                quality and even colour payoff.
+              </p>
+
+              <div class="wrapper">
+                <a href="#" class="btn btn-primary has-before has-after"
+                  >How It Works</a
+                >
+
+                <button class="hero-btn" aria-label="pixology promo">
+                  <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
+
+                  <span class="span">Behind the scenes</span>
+                </button>
+              </div>
+
+              <ul class="social-list">
+                <li>
+                  <a
+                    href="#"
+                    class="social-link"
+                    style="--color: hsl(241, 77%, 63%)"
+                  >
+                    <ion-icon name="logo-facebook"></ion-icon>
+
+                    <span class="span">Facebook</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="social-link"
+                    style="--color: hsl(0, 100%, 50%)"
+                  >
+                    <ion-icon name="logo-youtube"></ion-icon>
+
+                    <span class="span">Youtube</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="#"
+                    class="social-link"
+                    style="--color: hsl(203, 89%, 53%)"
+                  >
+                    <ion-icon name="logo-twitter"></ion-icon>
+
+                    <span class="span">Twitter</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <figure class="hero-banner">
+              <img
+                src="./assets/images/hero-banner.png"
+                width="794"
+                height="637"
+                alt="hero banner"
+                class="w-100"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- 
+        - #BLOG
+      -->
+
+        <section class="section blog" id="blog" aria-label="blog">
+          <div class="container">
+            <p class="section-subtitle text-center has-before">Blog Post</p>
+
+            <h2 class="h2 section-title text-center">
+              Popular <span class="has-before">blog post</span>
+            </h2>
+
+            <ul class="blog-list">
+              <li>
+                <div class="blog-card large">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      loading="lazy"
+                      alt="Godaddy user flow solution..."
+                      class="img-cover"
+                      width="202"
+                      height="202"
+                      loading="lazy"
+                      alt="How to gain pro experience ar figma update version"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <a href="#" class="tag">Development</a>
+
+                      <a href="#" class="publish-date">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">July 22, 2022</span>
+                      </a>
+                    </div>
+
+                    <h3>
+                      <a href="#" class="card-title"
+                        >OUR PRODUCTS ARE FULLY CUSTOMIZABLE</a
+                      >
+                    </h3>
+
+                    <p class="card-text">
+                      You can choose from over 300 colours/shades and product
+                      bases (Waterbased, Silicone Based,Mineral, High
+                      Definition) and tray/packaging settings to suit your
+                      client and course needs.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner">
+                    <img
+                      src="./assets/images/blog-2.jpg"
+                      width="202"
+                      height="162"
+                      loading="lazy"
+                      alt="How to gain pro experience ar figma update version"
+                      class="blog-img"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <a href="#" class="tag">Development</a>
+
+                      <a href="#" class="publish-date">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">July 21, 2020</span>
+                      </a>
+                    </div>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">PRIVATE LABEL OPTIONS</a>
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner">
+                    <img
+                      src="https://images.pexels.com/photos/5709642/pexels-photo-5709642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      width="202"
+                      height="162"
+                      loading="lazy"
+                      alt="How to gain pro experience ar figma update version"
+                      class="blog-img"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <a href="#" class="tag">Development</a>
+
+                      <a href="#" class="publish-date">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">July 21, 2020</span>
+                      </a>
+                    </div>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >PRODUCTS ARE FORMULATED IN CANADA OR THE USA</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="blog-card">
+                  <figure class="card-banner">
+                    <img
+                      src="https://images.pexels.com/photos/3738349/pexels-photo-3738349.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                      width="202"
+                      height="162"
+                      loading="lazy"
+                      alt="How to gain pro experience ar figma update version"
+                      class="blog-img"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <div class="wrapper">
+                      <a href="#" class="tag">Development</a>
+
+                      <a href="#" class="publish-date">
+                        <ion-icon
+                          name="time-outline"
+                          aria-hidden="true"
+                        ></ion-icon>
+
+                        <span class="span">July 21, 2020</span>
+                      </a>
+                    </div>
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >OUR STAFF IS A TEAM OF PROFESSIONAL MAKEUP ARTISTS</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top section">
+          <div class="footer-brand">
+            <p class="footer-list-title">About Glowing</p>
+
+            <p class="footer-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo
+              sem, faucibus dictum dapibus ornare, lacinia eu massa. Etiam porta
+              convallis tortor sit amet malesuada.
+            </p>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-skype"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Usefull Links</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">How it Works</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Create</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Explore</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms & Services</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Community</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Partners</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Suggestions</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Newsletters</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Usefull Links</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact us</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">How it Works</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Create</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Explore</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms & Services</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2022 Glowing. All Rights Reserved by JasmineHoang
+          </p>
+
+          <ul class="footer-bottom-list">
+            <li>
+              <a href="#" class="footer-bottom-link">Terms and conditions</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Privacy policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-bottom-link">Login / Signup</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn has-after active"
+      aria-label="back to top"
+      data-back-top-btn
+    >
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      "use strict";
+
+      /**
+       * add Event on elements
+       */
+
+      const addEventOnElem = function (elem, type, callback) {
+        if (elem.length > 1) {
+          for (let i = 0; i < elem.length; i++) {
+            elem[i].addEventListener(type, callback);
+          }
+        } else {
+          elem.addEventListener(type, callback);
+        }
+      };
+
+      /**
+       * navbar toggle
+       */
+
+      const navbar = document.querySelector("[data-navbar]");
+      const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+      const navbarLinks = document.querySelectorAll("[data-nav-link]");
+      const overlay = document.querySelector("[data-overlay]");
+
+      const toggleNavbar = function () {
+        navbar.classList.toggle("active");
+        overlay.classList.toggle("active");
+      };
+
+      addEventOnElem(navTogglers, "click", toggleNavbar);
+
+      const closeNavbar = function () {
+        navbar.classList.remove("active");
+        overlay.classList.remove("active");
+      };
+
+      addEventOnElem(navbarLinks, "click", closeNavbar);
+
+      /**
+       * header & back top btn show when scroll down to 100px
+       */
+
+      const header = document.querySelector("[data-header]");
+      const backTopBtn = document.querySelector("[data-back-top-btn]");
+
+      const headerActive = function () {
+        if (window.scrollY > 80) {
+          header.classList.add("active");
+          backTopBtn.classList.add("active");
+        } else {
+          header.classList.remove("active");
+          backTopBtn.classList.remove("active");
+        }
+      };
+
+      addEventOnElem(window, "scroll", headerActive);
+    </script>
+  </body>
+</html>
